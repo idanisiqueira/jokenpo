@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Concert One', sans-serif;
+}
+
+body {
+    background-image: url(assets/arcade.gif);
+    background-size: 100%;
+}
+
+h1 {
+    color: #c6e2ff;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 30px;
+    animation: neon 0.08s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 6px #cae4e1eb,
+            0 0 30px #cae4e157,
+            0 0 12px #1e84f285,
+            0 0 21px #1e84f2eb,
+            0 0 34px #1e84f2c7,
+            0 0 54px #1e84f2eb;
+    }
+
+    to {
+        text-shadow: 0 0 6px #cae4e1fa,
+            0 0 30px #cae4e16b,
+            0 0 12px #1e84f294,
+            0 0 22px #1e84f2d6,
+            0 0 38px #1e84f2e0,
+            0 0 60px #1e84f2;
+    }
+}
+
+input {
+    width: 130px;
+    margin: 15px;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.rock {
+    box-shadow: 0 0px 8px #31acff, 0 0px 8px #31acff;
+    background-color: #7B1A68;
+    border-radius: 60%;
+}
+
+.paper {
+    box-shadow: 0 0px 8px #31acff, 0 0px 8px #31acff;
+    background-color: #E213B9;
+    border-radius: 60%;
+}
+
+.scissors {
+    box-shadow: 0 0px 8px #31acff, 0 0px 8px #31acff;
+    background-color: #5734CC;
+    border-radius: 60%;
+}
+
+input:hover {
+    box-shadow: #31acff 5px 5px, #31acff 0 0 60px;
+}
+
+input:active {
+    box-shadow: #31acff 1px 1px;
+}
+
+.container {
+    color: #c6e2ff;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, .5);
+    width: 525px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 50px;
+    border: 3px solid #31acff;
+    box-shadow: 0 0px 8px #31acff, 0 0px 8px #31acff;
+}
+
+.names {
+    margin-top: 15px;
+    color: #f136c9;
+    text-align: center;
+    word-spacing: 230px;
+
+}
+
+.score {
+    letter-spacing: 5px;
+    font-size: 80px;
+    justify-content: center;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 70px;
+    margin-left:-5px;
+}
+
+.result {
+    color: rgb(247, 247, 122);
+    font-size: 35px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.my-choice {
+    width: 120px;
+    margin-left: 45px;
+    margin-top: -107px;
+    display: flex;
+}
+
+.your-choice {
+    width: 120px;
+    margin-left: 354px;
+    margin-top: -117px;
+    display: flex;
+}
+
+@media screen and (max-width:650px) {
+
+    body {
+        background-size: 450%;
+    }
+
+    h1 {
+        margin-top: 80px;
+        font-size: 80px;
+        padding-left: 5px;
+    }
+
+    .container {
+        width: 380px;
+        height: 200px;
+    }
+
+    .buttons {
+        margin-left: 10px;
+    }
+
+    .my-choice {
+        margin-left: 9px;
+        margin-top: -70px;
+        display: flex;
+    }
+
+    .your-choice {
+        margin-left: 245px;
+        margin-top: -117px;
+        display: flex;
+    }
+
+    .result {
+        margin-left: 20px;
+    }
+
+    .names {
+        margin-top: 25px;
+        word-spacing: 160px;
+    }
+
+    .score {
+        letter-spacing: 0px;
+        font-size: 65px;
+        margin-left: -5px;
+    }
+
+}
